@@ -4,8 +4,8 @@ from PyQt5.QtWidgets import *
 
 form_class = uic.loadUiType('panel.ui')[0]
 
-ssint = {1:5,2:5,3:5,4:5,5:5,6:5,7:5,8:5,9:5,10:5,11:5,12:5,13:5,14:5,15:5,16:5,17:5,18:5,19:5,20:5,21:5,22:5,23:5,24:5}
-sslist = {1:[],2:[],3:[],4:[],5:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]}
+ssint = {1:5,2:5,3:5,4:5,5:5,6:5,7:5,8:5,9:5,10:5,11:5,12:5,13:5,14:5,15:5,16:5,17:5,18:5,19:5,20:5,21:5,22:5,23:5,24:5,25:5}
+sslist = {1:[],2:[],3:[],4:[],5:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]}
 
 # Imported from guipicker
 # Returns str with 10 elements in a row
@@ -14,9 +14,7 @@ def tenslice(l):
     if l:
         for i in range(max(0, len(l)//10)+1):
             t = []
-            for x in l[10*i:10*(i+1)]:
-                if x >= 9: x += 1
-                t.append(x)
+            for x in l[10*i:10*(i+1)]: t.append(x)
             ret += ', '.join(str(x).rjust(2) for x in t) + '\n'
     else: ret = '없음'
     return ret
@@ -147,9 +145,19 @@ class WindowClass(QMainWindow, form_class):
         self.rad_24_3.clicked.connect(self.radpush)
         self.rad_24_4.clicked.connect(self.radpush)
         self.rad_24_5.clicked.connect(self.radpush)
+        self.rad_25_1.clicked.connect(self.radpush)
+        self.rad_25_2.clicked.connect(self.radpush)
+        self.rad_25_3.clicked.connect(self.radpush)
+        self.rad_25_4.clicked.connect(self.radpush)
+        self.rad_25_5.clicked.connect(self.radpush)
 
         # Quit Button
         self.exitbtn.clicked.connect(self.qexit)
+
+        # Student no. 9 is missing
+        self.std_no_09.setHidden(True)
+        self.std_name_09.setHidden(True)
+        self.std_09.setHidden(True)
 
     # Relaying rad_clicked and statupdate
     def radpush(self):
@@ -273,14 +281,19 @@ class WindowClass(QMainWindow, form_class):
         elif self.rad_24_3.isChecked(): self.statupdate(24,3)
         elif self.rad_24_4.isChecked(): self.statupdate(24,4)
         elif self.rad_24_5.isChecked(): self.statupdate(24,5)
+        if self.rad_25_1.isChecked(): self.statupdate(25,1)
+        elif self.rad_25_2.isChecked(): self.statupdate(25,2)
+        elif self.rad_25_3.isChecked(): self.statupdate(25,3)
+        elif self.rad_25_4.isChecked(): self.statupdate(25,4)
+        elif self.rad_25_5.isChecked(): self.statupdate(25,5)
 
     # Updates students status
     def statupdate(self, stdno, option):
         global ssint, sslist
-        old = ssint[stdno]; ssint[stdno] = option
-        sslist[old].remove(stdno)
-        sslist[option].append(stdno); sslist[option].sort()
-        self.labelupdate(old, option, 24-len(sslist[5]))
+        old = ssint[stdno]; ssint[stdno] = option # Cache old option, then update dict
+        sslist[old].remove(stdno); sslist[option].append(stdno) # Update list
+        sslist[option].sort() # Sort to pretty-print
+        self.labelupdate(old, option, 25-len(sslist[5]))
 
     # Updates display texts
     def labelupdate(self, old, new, remain):
