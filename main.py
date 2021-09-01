@@ -369,7 +369,11 @@ class WindowClass(QMainWindow, form_class):
         stage = 0; text = []
         try:
             # Load file
-            text = fileanalyze(open(os.path.dirname(__file__)+"\\config.txt", encoding="utf-8"))
+            fname = QFileDialog.getOpenFileName(self, "파일 선택", "", "All Files(*)", '')
+            if fname[0]:
+                text = fileanalyze(open(fname[0], encoding='utf-8'))
+            else:
+                raise FileNotFoundError
             stage = 1 # Debug CP
             # FileNotFoundError is exception-handled below
 
@@ -430,9 +434,9 @@ class WindowClass(QMainWindow, form_class):
             self.loadstatus.setText("정상")
 
         except FileNotFoundError as e:
-            self.loadstatus.setText("[Errno 1] config.txt가 없습니다."); print(e)
+            self.loadstatus.setText("[Errno 1] 파일을 선택하지 않았습니다."); print(e)
         except IndexError as e:
-            self.loadstatus.setText("[Errno 2] config.txt 정보 입력칸에 빈칸이 없는지 확인해 주십시오."); print(e)
+            self.loadstatus.setText("[Errno 2] 파일 정보 입력칸에 빈칸이 없는지 확인해 주십시오."); print(e)
         except ValueError as e:
             self.loadstatus.setText("[Errno 3] 형식에 맞게 정보를 입력했는지 확인해 주십시오."); print(e)
         except Exception as e:
