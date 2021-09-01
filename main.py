@@ -1,11 +1,16 @@
+# Copyright 2021 Yoon Sung-Yong
+# Free use in Daewon Foreign Language High School only
+# NIHONGOKA SAIKOU!
+
+import os
 import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import *
 
 form_class = uic.loadUiType('panel.ui')[0]
 
-ssint = {1:5,2:5,3:5,4:5,5:5,6:5,7:5,8:5,9:5,10:5,11:5,12:5,13:5,14:5,15:5,16:5,17:5,18:5,19:5,20:5,21:5,22:5,23:5,24:5,25:5}
-sslist = {1:[],2:[],3:[],4:[],5:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]}
+ssint = {0:30,1:5,2:5,3:5,4:5,5:5,6:5,7:5,8:5,9:5,10:5,11:5,12:5,13:5,14:5,15:5,16:5,17:5,18:5,19:5,20:5,21:5,22:5,23:5,24:5,25:5,26:5,27:5,28:5,29:5,30:5}
+sslist = {1:[],2:[],3:[],4:[],5:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]}
 
 # Imported from guipicker
 # Returns str with 10 elements in a row
@@ -18,6 +23,16 @@ def tenslice(l):
             ret += ', '.join(str(x).rjust(2) for x in t) + '\n'
     else: ret = '없음'
     return ret
+
+# Reads txt file and returns the content as list
+# Each element represents each line of the file
+def fileanalyze(f):
+    ret = []
+    while True:
+        s = f.readline()
+        if s == '':
+            return ret
+        ret.append(s)
 
 class WindowClass(QMainWindow, form_class):
     def __init__(self):
@@ -150,14 +165,37 @@ class WindowClass(QMainWindow, form_class):
         self.rad_25_3.clicked.connect(self.radpush)
         self.rad_25_4.clicked.connect(self.radpush)
         self.rad_25_5.clicked.connect(self.radpush)
+        self.rad_26_1.clicked.connect(self.radpush)
+        self.rad_26_2.clicked.connect(self.radpush)
+        self.rad_26_3.clicked.connect(self.radpush)
+        self.rad_26_4.clicked.connect(self.radpush)
+        self.rad_26_5.clicked.connect(self.radpush)
+        self.rad_27_1.clicked.connect(self.radpush)
+        self.rad_27_2.clicked.connect(self.radpush)
+        self.rad_27_3.clicked.connect(self.radpush)
+        self.rad_27_4.clicked.connect(self.radpush)
+        self.rad_27_5.clicked.connect(self.radpush)
+        self.rad_28_1.clicked.connect(self.radpush)
+        self.rad_28_2.clicked.connect(self.radpush)
+        self.rad_28_3.clicked.connect(self.radpush)
+        self.rad_28_4.clicked.connect(self.radpush)
+        self.rad_28_5.clicked.connect(self.radpush)
+        self.rad_29_1.clicked.connect(self.radpush)
+        self.rad_29_2.clicked.connect(self.radpush)
+        self.rad_29_3.clicked.connect(self.radpush)
+        self.rad_29_4.clicked.connect(self.radpush)
+        self.rad_29_5.clicked.connect(self.radpush)
+        self.rad_30_1.clicked.connect(self.radpush)
+        self.rad_30_2.clicked.connect(self.radpush)
+        self.rad_30_3.clicked.connect(self.radpush)
+        self.rad_30_4.clicked.connect(self.radpush)
+        self.rad_30_5.clicked.connect(self.radpush)
+
+        # Load Button
+        self.loadbtn.clicked.connect(self.load)
 
         # Quit Button
         self.exitbtn.clicked.connect(self.qexit)
-
-        # Student no. 9 is missing
-        self.std_no_09.setHidden(True)
-        self.std_name_09.setHidden(True)
-        self.std_09.setHidden(True)
 
     # Relaying rad_clicked and statupdate
     def radpush(self):
@@ -286,6 +324,31 @@ class WindowClass(QMainWindow, form_class):
         elif self.rad_25_3.isChecked(): self.statupdate(25,3)
         elif self.rad_25_4.isChecked(): self.statupdate(25,4)
         elif self.rad_25_5.isChecked(): self.statupdate(25,5)
+        if self.rad_26_1.isChecked(): self.statupdate(26,1)
+        elif self.rad_26_2.isChecked(): self.statupdate(26,2)
+        elif self.rad_26_3.isChecked(): self.statupdate(26,3)
+        elif self.rad_26_4.isChecked(): self.statupdate(26,4)
+        elif self.rad_26_5.isChecked(): self.statupdate(26,5)
+        if self.rad_27_1.isChecked(): self.statupdate(27,1)
+        elif self.rad_27_2.isChecked(): self.statupdate(27,2)
+        elif self.rad_27_3.isChecked(): self.statupdate(27,3)
+        elif self.rad_27_4.isChecked(): self.statupdate(27,4)
+        elif self.rad_27_5.isChecked(): self.statupdate(27,5)
+        if self.rad_28_1.isChecked(): self.statupdate(28,1)
+        elif self.rad_28_2.isChecked(): self.statupdate(28,2)
+        elif self.rad_28_3.isChecked(): self.statupdate(28,3)
+        elif self.rad_28_4.isChecked(): self.statupdate(28,4)
+        elif self.rad_28_5.isChecked(): self.statupdate(28,5)
+        if self.rad_29_1.isChecked(): self.statupdate(29,1)
+        elif self.rad_29_2.isChecked(): self.statupdate(29,2)
+        elif self.rad_29_3.isChecked(): self.statupdate(29,3)
+        elif self.rad_29_4.isChecked(): self.statupdate(29,4)
+        elif self.rad_29_5.isChecked(): self.statupdate(29,5)
+        if self.rad_30_1.isChecked(): self.statupdate(30,1)
+        elif self.rad_30_2.isChecked(): self.statupdate(30,2)
+        elif self.rad_30_3.isChecked(): self.statupdate(30,3)
+        elif self.rad_30_4.isChecked(): self.statupdate(30,4)
+        elif self.rad_30_5.isChecked(): self.statupdate(30,5)
 
     # Updates students status
     def statupdate(self, stdno, option):
@@ -293,13 +356,87 @@ class WindowClass(QMainWindow, form_class):
         old = ssint[stdno]; ssint[stdno] = option # Cache old option, then update dict
         sslist[old].remove(stdno); sslist[option].append(stdno) # Update list
         sslist[option].sort() # Sort to pretty-print
-        self.labelupdate(old, option, 25-len(sslist[5]))
+        self.labelupdate(old, option, len(sslist[1])+len(sslist[2])+len(sslist[3])+len(sslist[4]))
 
     # Updates display texts
     def labelupdate(self, old, new, remain):
         if old != 5: exec(f"self.display_content_{old}.setText(tenslice(sslist[old]))")
         if new != 5: exec(f"self.display_content_{new}.setText(tenslice(sslist[new]))")
         exec(f"self.display_total.display({remain})")
+
+    # Loads students list and updates status panel
+    def load(self):
+        stage = 0; text = []
+        try:
+            # Load file
+            text = fileanalyze(open(os.path.dirname(__file__)+"\\config.txt", encoding="utf-8"))
+            stage = 1 # Debug CP
+            # FileNotFoundError is exception-handled below
+
+            # Assigns each value
+            grade = int(text[0][-2:].replace(':',''))
+            homeroom = int(text[1][-3:].replace(':','')) 
+            total = int(text[2][-3:].replace(':',''))
+            stage = 2
+
+            absent = [*map(int,text[3][3:].replace(':','').split(', '))]
+            name = [*map(str,text[4][3:].replace(':','').lstrip().split(', '))]
+            stage = 3
+            # IndexError in case of illegal data input, and
+            # ValueError in case of indentation problem are exception-handled below
+
+            # Initializing global variants & Radios
+            global ssint, sslist
+            for key in sslist: sslist[key] = []
+            stage = 4
+
+            for i in range(1, 31): # Clear ssint & Initialize sslist
+                ssint[i] = 5; sslist[5].append(i)
+                num = str(i).rjust(2,'0') # Initializing radio buttons
+                exec(f"self.rad_{num}_1.setChecked(False)")
+                exec(f"self.rad_{num}_2.setChecked(False)")
+                exec(f"self.rad_{num}_3.setChecked(False)")
+                exec(f"self.rad_{num}_4.setChecked(False)")
+                exec(f"self.rad_{num}_5.setChecked(True)")
+            stage = 5
+
+            ssint[0] = total - len(absent) # ssint now has the number of present students
+            stage = 6
+
+            # Updating display labels
+            self.display_title_1.setText(f"{grade}학년 {homeroom}반 야간자율학습 참가 인원 현황") # Main Title
+            self.display_content_1.setText("없음") # Status section
+            self.display_content_2.setText("없음")
+            self.display_content_3.setText("없음")
+            self.display_content_4.setText("없음")
+            self.display_total.display(0) # Total number section
+            stage = 7
+
+            for i in range(1, 31): # Names
+                num = str(i).rjust(2,'0')
+                if i not in absent and i <= total: # Try un-hide present students and changes name
+                    exec(f"self.std_no_{num}.setHidden(False)")
+                    exec(f"self.std_name_{num}.setHidden(False)")
+                    exec(f"self.std_{num}.setHidden(False)")
+                    stdname = name[i-1]
+                    if len(stdname) == 2:
+                        stdname = stdname[0] + '\u3000' + stdname[1] # U+3000 is a FULL-WIDTH SPACE character
+                    exec(f"self.std_name_{num}.setText('{stdname}')")
+                else: # Hide absent students
+                    exec(f"self.std_no_{num}.setHidden(True)")
+                    exec(f"self.std_name_{num}.setHidden(True)")
+                    exec(f"self.std_{num}.setHidden(True)")
+            stage = 8
+            self.loadstatus.setText("정상")
+
+        except FileNotFoundError as e:
+            self.loadstatus.setText("[Errno 1] config.txt가 없습니다."); print(e)
+        except IndexError as e:
+            self.loadstatus.setText("[Errno 2] config.txt 정보 입력칸에 빈칸이 없는지 확인해 주십시오."); print(e)
+        except ValueError as e:
+            self.loadstatus.setText("[Errno 3] 형식에 맞게 정보를 입력했는지 확인해 주십시오."); print(e)
+        except Exception as e:
+            self.loadstatus.setText("[Errno 0] 알 수 없는 오류 발생. 콘솔창을 확인해주세요."); print(e, stage, text, sep='\n')
 
     # Custom sys.exit() function
     def qexit(self):
