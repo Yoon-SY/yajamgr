@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1400</width>
-    <height>880</height>
+    <width>1200</width>
+    <height>730</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -41,27 +41,11 @@
    <string>야간자율학습 현황판</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="Line" name="HSeparator">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>10</y>
-      <width>20</width>
-      <height>850</height>
-     </rect>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Sunken</enum>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
    <widget class="QPushButton" name="exitbtn">
     <property name="geometry">
      <rect>
-      <x>1290</x>
-      <y>840</y>
+      <x>1085</x>
+      <y>695</y>
       <width>100</width>
       <height>30</height>
      </rect>
@@ -79,8 +63,8 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
-      <width>333</width>
+      <y>0</y>
+      <width>341</width>
       <height>31</height>
      </rect>
     </property>
@@ -126,7 +110,7 @@
         </font>
        </property>
        <property name="text">
-        <string>교실</string>
+        <string>정시</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -141,7 +125,7 @@
         </font>
        </property>
        <property name="text">
-        <string>야간</string>
+        <string>인강</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -156,7 +140,7 @@
         </font>
        </property>
        <property name="text">
-        <string>GLP</string>
+        <string>기타</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -171,7 +155,7 @@
         </font>
        </property>
        <property name="text">
-        <string>기타</string>
+        <string>교실</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -193,15 +177,30 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QLabel" name="input_top_8">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>결석</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="Line" name="VSeparator_1">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>45</y>
-      <width>330</width>
-      <height>10</height>
+      <y>30</y>
+      <width>340</width>
+      <height>15</height>
      </rect>
     </property>
     <property name="orientation">
@@ -212,9 +211,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>60</y>
-      <width>330</width>
-      <height>800</height>
+      <y>45</y>
+      <width>340</width>
+      <height>670</height>
      </rect>
     </property>
     <property name="font">
@@ -236,8 +235,8 @@
       <rect>
        <x>5</x>
        <y>0</y>
-       <width>28</width>
-       <height>25</height>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -256,9 +255,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>25</y>
-       <width>28</width>
-       <height>25</height>
+       <y>22</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -277,9 +276,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>50</y>
-       <width>28</width>
-       <height>25</height>
+       <y>44</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -298,9 +297,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>75</y>
-       <width>28</width>
-       <height>25</height>
+       <y>66</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -319,9 +318,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>100</y>
-       <width>28</width>
-       <height>25</height>
+       <y>88</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -340,9 +339,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>130</y>
-       <width>28</width>
-       <height>25</height>
+       <y>112</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -361,9 +360,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>155</y>
-       <width>28</width>
-       <height>25</height>
+       <y>134</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -382,9 +381,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>180</y>
-       <width>28</width>
-       <height>25</height>
+       <y>156</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -399,13 +398,37 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
+    <widget class="QLabel" name="std_no_09">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>178</y>
+       <width>25</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>9</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
     <widget class="QLabel" name="std_no_10">
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>230</y>
-       <width>28</width>
-       <height>25</height>
+       <y>200</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -424,9 +447,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>260</y>
-       <width>28</width>
-       <height>25</height>
+       <y>224</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -445,9 +468,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>285</y>
-       <width>28</width>
-       <height>25</height>
+       <y>246</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -466,9 +489,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>310</y>
-       <width>28</width>
-       <height>25</height>
+       <y>268</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -487,9 +510,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>335</y>
-       <width>28</width>
-       <height>25</height>
+       <y>290</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -508,9 +531,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>360</y>
-       <width>28</width>
-       <height>25</height>
+       <y>312</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -529,9 +552,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>390</y>
-       <width>28</width>
-       <height>25</height>
+       <y>336</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -550,9 +573,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>415</y>
-       <width>28</width>
-       <height>25</height>
+       <y>358</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -571,9 +594,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>440</y>
-       <width>28</width>
-       <height>25</height>
+       <y>380</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -592,9 +615,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>465</y>
-       <width>28</width>
-       <height>25</height>
+       <y>402</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -613,9 +636,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>490</y>
-       <width>28</width>
-       <height>25</height>
+       <y>424</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -634,9 +657,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>520</y>
-       <width>28</width>
-       <height>25</height>
+       <y>448</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -655,9 +678,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>545</y>
-       <width>28</width>
-       <height>25</height>
+       <y>470</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -676,9 +699,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>570</y>
-       <width>28</width>
-       <height>25</height>
+       <y>492</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -697,9 +720,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>595</y>
-       <width>28</width>
-       <height>25</height>
+       <y>514</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -718,9 +741,9 @@
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>620</y>
-       <width>28</width>
-       <height>25</height>
+       <y>536</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -735,2941 +758,13 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="std_name_01">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>0</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생01</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_02">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>25</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생02</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_03">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>50</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생03</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_04">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>75</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생04</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_05">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>100</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생05</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_06">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>130</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생06</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_07">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>155</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생07</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_08">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>180</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생08</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_10">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>230</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생10</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_11">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>260</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생11</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_12">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>285</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생12</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_13">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>310</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생13</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_14">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>335</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생14</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_15">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>360</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생15</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_16">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>390</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생16</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_17">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>415</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생17</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_18">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>440</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생18</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_19">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>465</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생19</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_20">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>490</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생20</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_21">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>520</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생21</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_22">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>545</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생22</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_23">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>570</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생23</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_24">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>595</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생24</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_25">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>620</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생25</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QGroupBox" name="std_01">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>0</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_01_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_01_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_01_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_01_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_01_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_02">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>25</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_02_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_02_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_02_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_02_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_02_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_03">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>50</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_03_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_03_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_03_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_03_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_03_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_04">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>75</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_04_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_04_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_04_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_04_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_04_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_05">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>100</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_05_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_05_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_05_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_05_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_05_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_06">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>130</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_06_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_06_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_06_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_06_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_06_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_07">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>155</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_07_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_07_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_07_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_07_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_07_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_08">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>180</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_08_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_08_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_08_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_08_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_08_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_10">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>230</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_10_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_10_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_10_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_10_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_10_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_11">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>260</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_11_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_11_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_11_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_11_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_11_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_12">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>285</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_12_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_12_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_12_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_12_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_12_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_13">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>310</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_13_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_13_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_13_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_13_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_13_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_14">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>335</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_14_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_14_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_14_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_14_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_14_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_15">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>360</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_15_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_15_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_15_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_15_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_15_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_16">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>390</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_16_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_16_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_16_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_16_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_16_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_17">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>415</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_17_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_17_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_17_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_17_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_17_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_18">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>440</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_18_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_18_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_18_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_18_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_18_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_19">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>465</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_19_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_19_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_19_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_19_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_19_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_20">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>490</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_20_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_20_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_20_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_20_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_20_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_21">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>520</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_21_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_21_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_21_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_21_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_21_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_22">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>545</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_22_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_22_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_22_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_22_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_22_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_23">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>570</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_23_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_23_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_23_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_23_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_23_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_24">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>595</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_24_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_24_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_24_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_24_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_24_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_25">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>620</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_25_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_25_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_25_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_25_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_25_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QLabel" name="std_no_09">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>5</x>
-       <y>205</y>
-       <width>28</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>9</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_09">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>205</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생09</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QGroupBox" name="std_09">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>205</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_09_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_09_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_09_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_09_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_09_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QLabel" name="std_name_26">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>650</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생26</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QGroupBox" name="std_29">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>725</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_29_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_29_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_29_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_29_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_29_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="std_30">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>750</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_30_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_30_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_30_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_30_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_30_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QLabel" name="std_name_27">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>675</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생27</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QGroupBox" name="std_26">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>650</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_26_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_26_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_26_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_26_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_26_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QLabel" name="std_name_29">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>725</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생29</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_no_27">
-     <property name="geometry">
-      <rect>
-       <x>5</x>
-       <y>675</y>
-       <width>28</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>27</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_name_30">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>750</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생30</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
     <widget class="QLabel" name="std_no_26">
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>650</y>
-       <width>28</width>
-       <height>25</height>
+       <y>560</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -3684,94 +779,13 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QGroupBox" name="std_28">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>700</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_28_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_28_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_28_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_28_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_28_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QLabel" name="std_no_30">
+    <widget class="QLabel" name="std_no_27">
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>750</y>
-       <width>28</width>
-       <height>25</height>
+       <y>582</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -3780,142 +794,19 @@
       </font>
      </property>
      <property name="text">
-      <string>30</string>
+      <string>27</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="std_no_29">
-     <property name="geometry">
-      <rect>
-       <x>5</x>
-       <y>725</y>
-       <width>28</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>29</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-    <widget class="QGroupBox" name="std_27">
-     <property name="geometry">
-      <rect>
-       <x>115</x>
-       <y>675</y>
-       <width>210</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <widget class="QRadioButton" name="rad_27_1">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_27_2">
-      <property name="geometry">
-       <rect>
-        <x>51</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_27_3">
-      <property name="geometry">
-       <rect>
-        <x>97</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_27_4">
-      <property name="geometry">
-       <rect>
-        <x>144</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="rad_27_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>2</y>
-        <width>20</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QLabel" name="std_name_28">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>700</y>
-       <width>70</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>학생28</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="std_no_28">
      <property name="geometry">
       <rect>
        <x>5</x>
-       <y>700</y>
-       <width>28</width>
-       <height>25</height>
+       <y>604</y>
+       <width>25</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
@@ -3930,14 +821,3528 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
+    <widget class="QLabel" name="std_no_29">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>626</y>
+       <width>25</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>29</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_no_30">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>648</y>
+       <width>25</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>30</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_01">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>0</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_02">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>22</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_03">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>44</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_04">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>66</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_05">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>88</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_06">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>112</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_07">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>134</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_08">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>156</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_09">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>178</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_10">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_11">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>224</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_12">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>246</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_13">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>268</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_14">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>290</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_15">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>312</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_16">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>336</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_17">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>358</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_18">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>380</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_19">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>402</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_20">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>424</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_21">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>448</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_22">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>470</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_23">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>492</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_24">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>514</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_25">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>536</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_26">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>560</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_27">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>582</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_28">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>604</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_29">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>626</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="std_name_30">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>648</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="std_01">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>0</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_01_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_01_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_01_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_01_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_01_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_01_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_02">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>22</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_02_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_02_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_02_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_02_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_02_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_02_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_03">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>44</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_03_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_03_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_03_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_03_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_03_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_03_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_04">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>66</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_04_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_04_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_04_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_04_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_04_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_04_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_05">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>88</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_05_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_05_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_05_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_05_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_05_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_05_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_06">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>112</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_06_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_06_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_06_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_06_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_06_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_06_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_07">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>134</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_07_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_07_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_07_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_07_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_07_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_07_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_08">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>156</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_08_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_08_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_08_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_08_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_08_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_08_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_09">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>178</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_09_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_09_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_09_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_09_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_09_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_09_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_10">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>200</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_10_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_10_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_10_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_10_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_10_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_10_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_11">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>224</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_11_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_11_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_11_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_11_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_11_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_11_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_12">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>246</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_12_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_12_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_12_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_12_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_12_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_12_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_13">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>268</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_13_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_13_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_13_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_13_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_13_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_13_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_14">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>290</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_14_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_14_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_14_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_14_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_14_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_14_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_15">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>312</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_15_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_15_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_15_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_15_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_15_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_15_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_16">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>336</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_16_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_16_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_16_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_16_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_16_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_16_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_17">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>358</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_17_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_17_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_17_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_17_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_17_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_17_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_18">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>380</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_18_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_18_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_18_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_18_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_18_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_18_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_19">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>402</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_19_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_19_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_19_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_19_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_19_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_19_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_20">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>424</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_20_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_20_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_20_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_20_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_20_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_20_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_21">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>448</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_21_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_21_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_21_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_21_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_21_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_21_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_22">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>470</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_22_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_22_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_22_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_22_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_22_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_22_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_23">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>492</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_23_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_23_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_23_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_23_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_23_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_23_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_24">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>514</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_24_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_24_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_24_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_24_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_24_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_24_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_25">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>536</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_25_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_25_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_25_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_25_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_25_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_25_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_26">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>560</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_26_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_26_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_26_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_26_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_26_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_26_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_27">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>582</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_27_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_27_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_27_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_27_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_27_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_27_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_28">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>604</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_28_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_28_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_28_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_28_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_28_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_28_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_29">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>626</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_29_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_29_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_29_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_29_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_29_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_29_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="std_30">
+     <property name="geometry">
+      <rect>
+       <x>105</x>
+       <y>648</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="rad_30_1">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_30_2">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_30_3">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_30_4">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_30_5">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rad_30_6">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>2</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
    </widget>
-   <widget class="QLabel" name="display_title_1">
+   <widget class="Line" name="HSeparator">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>10</y>
-      <width>800</width>
-      <height>45</height>
+      <x>350</x>
+      <y>5</y>
+      <width>20</width>
+      <height>715</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="display_title">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>5</y>
+      <width>500</width>
+      <height>35</height>
      </rect>
     </property>
     <property name="font">
@@ -3950,22 +4355,21 @@
      </font>
     </property>
     <property name="text">
-     <string>2학년 6반 야간자율학습 참가 인원 현황</string>
+     <string>3학년 6반 야간자율학습 참가 인원 현황</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="period_combobox">
+   <widget class="QComboBox" name="period_combo">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>60</y>
-      <width>60</width>
+      <x>980</x>
+      <y>10</y>
+      <width>40</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>NanumSquare</family>
-      <pointsize>15</pointsize>
+      <pointsize>18</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -3981,19 +4385,18 @@
      </property>
     </item>
    </widget>
-   <widget class="QLabel" name="display_title_2">
+   <widget class="QLabel" name="period_label">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>60</y>
-      <width>60</width>
+      <x>1030</x>
+      <y>10</y>
+      <width>50</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>NanumSquare</family>
-      <pointsize>15</pointsize>
+      <pointsize>18</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -4002,12 +4405,30 @@
      <string>교시</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="savebtn">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>10</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>저장</string>
+    </property>
+   </widget>
    <widget class="Line" name="VSeperator_2">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>95</y>
-      <width>1030</width>
+      <x>370</x>
+      <y>40</y>
+      <width>820</width>
       <height>10</height>
      </rect>
     </property>
@@ -4018,10 +4439,10 @@
    <widget class="QFrame" name="display_frame">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>110</y>
-      <width>1030</width>
-      <height>720</height>
+      <x>370</x>
+      <y>50</y>
+      <width>820</width>
+      <height>640</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -4036,9 +4457,9 @@
     <widget class="QLabel" name="display_no_1">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>20</y>
-       <width>40</width>
+       <x>10</x>
+       <y>195</y>
+       <width>30</width>
        <height>30</height>
       </rect>
      </property>
@@ -4057,9 +4478,9 @@
     <widget class="QLabel" name="display_no_2">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>180</y>
-       <width>40</width>
+       <x>10</x>
+       <y>305</y>
+       <width>30</width>
        <height>30</height>
       </rect>
      </property>
@@ -4078,9 +4499,9 @@
     <widget class="QLabel" name="display_no_3">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>340</y>
-       <width>40</width>
+       <x>10</x>
+       <y>415</y>
+       <width>30</width>
        <height>30</height>
       </rect>
      </property>
@@ -4099,9 +4520,9 @@
     <widget class="QLabel" name="display_no_4">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>500</y>
-       <width>40</width>
+       <x>10</x>
+       <y>525</y>
+       <width>30</width>
        <height>30</height>
       </rect>
      </property>
@@ -4120,9 +4541,9 @@
     <widget class="QLabel" name="display_menu_1">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>20</y>
-       <width>150</width>
+       <x>45</x>
+       <y>195</y>
+       <width>135</width>
        <height>30</height>
       </rect>
      </property>
@@ -4132,7 +4553,7 @@
       </font>
      </property>
      <property name="text">
-      <string>교　　　실</string>
+      <string>정　시　반</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -4141,9 +4562,9 @@
     <widget class="QLabel" name="display_menu_2">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>180</y>
-       <width>150</width>
+       <x>45</x>
+       <y>305</y>
+       <width>135</width>
        <height>30</height>
       </rect>
      </property>
@@ -4153,7 +4574,7 @@
       </font>
      </property>
      <property name="text">
-      <string>야간 방과후</string>
+      <string>인　강　실</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -4162,30 +4583,9 @@
     <widget class="QLabel" name="display_menu_3">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>340</y>
-       <width>150</width>
-       <height>30</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>18</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>GLP/AETC</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="display_menu_4">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>500</y>
-       <width>150</width>
+       <x>45</x>
+       <y>415</y>
+       <width>135</width>
        <height>30</height>
       </rect>
      </property>
@@ -4201,64 +4601,40 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="display_menu_5">
+    <widget class="QLabel" name="display_menu_4">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>660</y>
-       <width>100</width>
-       <height>40</height>
+       <x>45</x>
+       <y>525</y>
+       <width>135</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>20</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <pointsize>18</pointsize>
       </font>
      </property>
      <property name="text">
-      <string>현재원</string>
+      <string>교　　　실</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLCDNumber" name="display_total">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>660</y>
-       <width>75</width>
-       <height>40</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="digitCount">
-      <number>2</number>
-     </property>
-     <property name="segmentStyle">
-      <enum>QLCDNumber::Flat</enum>
-     </property>
-    </widget>
     <widget class="QLabel" name="display_content_1">
      <property name="geometry">
       <rect>
-       <x>220</x>
-       <y>20</y>
-       <width>750</width>
-       <height>150</height>
+       <x>190</x>
+       <y>195</y>
+       <width>610</width>
+       <height>105</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>나눔스퀘어 ExtraBold</family>
-       <pointsize>24</pointsize>
+       <pointsize>20</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -4279,16 +4655,16 @@
     <widget class="QLabel" name="display_content_2">
      <property name="geometry">
       <rect>
-       <x>220</x>
-       <y>180</y>
-       <width>750</width>
-       <height>150</height>
+       <x>190</x>
+       <y>305</y>
+       <width>610</width>
+       <height>105</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>나눔스퀘어 ExtraBold</family>
-       <pointsize>24</pointsize>
+       <pointsize>20</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -4309,16 +4685,16 @@
     <widget class="QLabel" name="display_content_3">
      <property name="geometry">
       <rect>
-       <x>220</x>
-       <y>340</y>
-       <width>750</width>
-       <height>150</height>
+       <x>190</x>
+       <y>415</y>
+       <width>610</width>
+       <height>105</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>나눔스퀘어 ExtraBold</family>
-       <pointsize>24</pointsize>
+       <pointsize>20</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -4339,16 +4715,16 @@
     <widget class="QLabel" name="display_content_4">
      <property name="geometry">
       <rect>
-       <x>220</x>
-       <y>500</y>
-       <width>750</width>
-       <height>150</height>
+       <x>190</x>
+       <y>525</y>
+       <width>610</width>
+       <height>105</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>나눔스퀘어 ExtraBold</family>
-       <pointsize>24</pointsize>
+       <pointsize>20</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -4366,31 +4742,357 @@
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
      </property>
     </widget>
+    <widget class="QLabel" name="display_content_5">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>65</y>
+       <width>410</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔스퀘어 ExtraBold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>없음</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="display_content_6">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>10</y>
+       <width>410</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔스퀘어 ExtraBold</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>없음</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="display_menu_absent">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>10</y>
+       <width>65</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>결석</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="display_menu_home">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>65</y>
+       <width>65</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>귀가</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="display_menu_school">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>145</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>참여인원</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="display_menu_total">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>총 인원</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="Line" name="HSeparator3">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>135</y>
+       <width>790</width>
+       <height>5</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_menu_1">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>230</y>
+       <width>60</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="value" stdset="0">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_menu_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>340</y>
+       <width>60</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_menu_3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>450</y>
+       <width>60</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_menu_4">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>560</y>
+       <width>60</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_menu_5">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>65</y>
+       <width>75</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_menu_6">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>10</y>
+       <width>75</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_school">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>145</y>
+       <width>75</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_total">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>10</y>
+       <width>75</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+    </widget>
    </widget>
-   <widget class="QPushButton" name="loadbtn">
+   <widget class="QLabel" name="status">
     <property name="geometry">
      <rect>
-      <x>1125</x>
-      <y>840</y>
-      <width>150</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>학반 정보 변경</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="loadstatus">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>840</y>
-      <width>750</width>
+      <x>370</x>
+      <y>695</y>
+      <width>540</width>
       <height>30</height>
      </rect>
     </property>
@@ -4404,6 +5106,24 @@
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadbtn">
+    <property name="geometry">
+     <rect>
+      <x>925</x>
+      <y>695</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>학반 정보 변경</string>
     </property>
    </widget>
   </widget>
