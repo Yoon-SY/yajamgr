@@ -61,8 +61,8 @@ def fileanalyze(f):
 def getfname(dpt):
     startday = today - dt.timedelta(days=isotoday[2]-1)
     endday = today + dt.timedelta(days=5-isotoday[2])
-    return "C:/Users/%s/Desktop/야자관리/%d-%d %d주차(%d.%d.~%d.%d.) 야간자율학습 통계.csv" % (
-        getpass.getuser(), grade, homeroom, isotoday[1],
+    return "%d-%d %d주차(%d.%d.~%d.%d.) 야간자율학습 통계.csv" % (
+        grade, homeroom, isotoday[1],
         startday.month, startday.day, endday.month, endday.day)
 
 # Initializes a new CSV file
